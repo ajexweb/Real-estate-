@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links li a:hover {
+    color: #e63946;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600?text=Real+Estate') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.cta-button:hover {
+    background-color: #d00000;
+}
+
+/* Properties Section */
+.properties {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.properties h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    flex: 1;
+}
+
+.search-button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.search-button:hover {
+    background-color: #d00000;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.property-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.property-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.property-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.property-button:hover {
+    background-color: #d00000;
+}
+
+/* Add Property Section */
+.add-property {
+    padding: 50px 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.add-property h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#add-property-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-property-form input,
+#add-property-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.submit-button:hover {
+    background-color: #d00000;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    font-size: 1.1em;
+}
+
+.about a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact p a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        padding: 10px;
+    }
+}

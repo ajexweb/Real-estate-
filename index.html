@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajex Web Real Estate - Find your dream home with our expert services.">
+    <title>Ajex Web Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Ajex Web Real Estate</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#add-property">Add Property</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Find Your Dream Home</h1>
+        <p>Explore premium properties with Ajex Web Real Estate.</p>
+        <a href="#properties" class="cta-button">Browse Properties</a>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <h2>Our Properties</h2>
+        <!-- Search Form -->
+        <form class="search-form">
+            <input type="text" id="search-input" placeholder="Search by price, beds, or type (e.g., Villa, $300,000, 2 Beds)">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="property-grid">
+            <div class="property-card" data-price="500000" data-beds="3" data-type="Villa">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTReVTjE0f41JuxxK2JQDIU2zoEVAXPq_MYyApHZFoGzgtL9if7cVxpcqA&s=10" alt="Modern Villa">
+                <h3>Modern Villa</h3>
+                <p>$500,000 | 3 Beds | 2 Baths</p>
+                <a href="#" class="property-button">View Details</a>
+            </div>
+            <div class="property-card" data-price="300000" data-beds="2" data-type="Apartment">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToy_j4lP-Z2-xxSCvMPcj7zQh0rXjqDWsmG8gjTOq_543Vj7LRPz_4KBDz&s=10" alt="City Apartment">
+                <h3>City Apartment</h3>
+                <p>$300,000 | 2 Beds | 1 Bath</p>
+                <a href="#" class="property-button">View Details</a>
+            </div>
+            <div class="property-card" data-price="450000" data-beds="4" data-type="House">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DIFnEH9N_WD9xKyYTlm_fquWmxbBdeb-SZGX_VhHSdUOQHh8dh0w_1sK&s=10" alt="Suburban House">
+                <h3>Suburban House</h3>
+                <p>$450,000 | 4 Beds | 3 Baths</p>
+                <a href="#" class="property-button">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Property Section -->
+    <section id="add-property" class="add-property">
+        <h2>Add New Property</h2>
+        <form id="add-property-form">
+            <input type="text" name="name" placeholder="Property Name (e.g., Luxury Condo)" required>
+            <input type="number" name="price" placeholder="Price (e.g., 400000)" required>
+            <input type="number" name="beds" placeholder="Number of Bedrooms (e.g., 2)" required>
+            <input type="text" name="type" placeholder="Type (e.g., Condo, House)" required>
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit" class="submit-button">Add Property</button>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Ajex Web Real Estate, we specialize in connecting clients with their ideal properties. From modern villas to eco-friendly apartments, our team is dedicated to providing personalized service and sustainable real estate solutions.</p>
+        <p>Follow us on <a href="https://instagram.com/ajexweb" target="_blank">Instagram</a> for updates!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/xdkeqakq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <p>Email us at <a href="mailto:ajexweb@gmail.com">ajexweb@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Ajex Web. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
